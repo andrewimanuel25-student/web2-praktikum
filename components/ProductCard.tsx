@@ -9,7 +9,7 @@ type ProductCardProps = {
 export default function ProductCard({ product, onAddToCart }: ProductCardProps) {
           return (
                     <div className="border rounded-lg p-4 shadow-sm">
-                    <h3 className="font-semibold">{product.name}</h3>
+                    <h3 className="font-semibold text-gray-900 text-lg">{product.name}</h3>
                     <p className="text-gray-600">Rp{product.price.toLocaleString("id-ID")}</p>
                     <button
                     onClick={() => onAddToCart?.(product)}
@@ -20,3 +20,5 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
                     </div>
           );
 }
+
+// SEBELUM

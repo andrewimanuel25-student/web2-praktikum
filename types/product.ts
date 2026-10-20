@@ -1,6 +1,7 @@
 //Bagian dari modul 2
 export interface Product {
           id: string;
+          slug : string;
           name: string;
           price: number;
           category: "electronics" | "fashion" | "food";
