@@ -1,0 +1,23 @@
+[
+          {
+                    "id": "1",
+                    "name": "Kopi Toraja",
+                    "description": "Kopi lokal kemasan 250 gram dengan aroma khas.",
+                    "price": 85000,
+                    "category": "Minuman"
+          },
+          {
+                    "id": "2",
+                    "name": "Keripik Pisang",
+                    "description": "Keripik pisang renyah produksi UMKM lokal.",
+                    "price": 25000,
+                    "category": "Makanan"
+          },
+          {
+                    "id": "3",
+                    "name": "Sambal UMKM",
+                    "description": "Sambal rumahan dengan cita rasa khas.",
+                    "price": 30000,
+                    "category": "Makanan"
+          }
+]
