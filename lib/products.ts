@@ -18,3 +18,24 @@ export async function addProductToStore(name: string, price: number): Promise<Pr
           store.products = [...store.products!, newProduct];
           return newProduct;
 }
+
+export async function updateProduct(
+  id: string,
+  data: { name?: string; price?: number }
+): Promise<Product | null> {
+  const index = store.products!.findIndex((p) => p.id === id);
+  if (index === -1) return null;
+
+  const updated: Product = {
+    ...store.products![index],
+    ...data,
+  };
+  store.products![index] = updated;
+  return updated;
+}
+
+export async function deleteProduct(id: string): Promise<boolean> {
+  const initialLength = store.products!.length;
+  store.products = store.products!.filter((p) => p.id !== id);
+  return store.products.length < initialLength;
+}

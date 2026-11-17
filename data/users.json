@@ -1,0 +1,16 @@
+[
+  {
+    "id": "25013537-149b-4ed6-b0c7-24a0be1b312c",
+    "name": "Administrator",
+    "email": "admin@umkm.local",
+    "passwordHash": "$2b$12$jLrxmbaPNC5T7icOfIp4uO5PiufGW02vbicbshXkadsKsxwSxHFeS",
+    "role": "admin"
+  },
+  {
+    "id": "20d0c122-3ba7-4c3a-8d8a-6cd90426eea9",
+    "name": "Pelanggan Demo",
+    "email": "customer@umkm.local",
+    "passwordHash": "$2b$12$Fq4Umd4Ui4t13W5IPzHr8O3/C2AC/0Jk.Oct7gBdHM7D3wImIP6Ia",
+    "role": "customer"
+  }
+]

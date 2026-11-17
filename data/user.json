@@ -1,0 +1,6 @@
+// Jangan lupa lakukan ini sebagai testing
+// $env:ADMIN_PASSWORD="AdminPassword123!"
+// $env:CUSTOMER_PASSWORD="CustomerPassword123!"
+// npm run seed:users
+// Remove-Item Env:ADMIN_PASSWORD
+// Remove-Item Env:CUSTOMER_PASSWORD

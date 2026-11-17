@@ -36,13 +36,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           return (
                     <html lang="id">
                     <body>
-                    {/* <nav className="flex gap-4 p-4 bg-blue-800 text-white font-medium">
-                              <Link href="/" className="hover:underline">Beranda</Link>
-                              <Link href="/products" className="hover:underline">Produk</Link>
-                              <Link href="/dashboard" className="hover:underline">Dashboard</Link>
-                              <Link href="/promo" className="hover:underline text-amber-300">🎉 Promo (SSG Baru)</Link>
-                    </nav>
-                    {children} */}
+                    {/* {
+                              <nav className="flex gap-4 p-4 bg-blue-800 text-white font-medium">
+                                        <Link href="/" className="hover:underline">Beranda</Link>
+                                        <Link href="/products" className="hover:underline">Produk</Link>
+                                        <Link href="/dashboard" className="hover:underline">Dashboard</Link>
+                                        <Link href="/promo" className="hover:underline text-amber-300">🎉 Promo (SSG Baru)</Link>
+                              </nav>
+                              {children}
+                    } */}
                               <TrpcProvider>{children}</TrpcProvider>
                     </body>
                     </html>

@@ -4,6 +4,8 @@ import { revalidatePath } from "next/cache";
 import { createProduct, deleteProduct, updateProduct, } from "@/lib/product-store";
 import { productSchema } from "@/lib/product-schema";
 
+import { requireAdmin } from "@/lib/auth-guard";
+
 export type ProductActionState = {
           success: boolean; 
           message: string;
@@ -28,6 +30,7 @@ export async function createProductAction(
           _previousState: ProductActionState,
           formData: FormData,
 ): Promise<ProductActionState> {
+          await requireAdmin();
           const parsed = parseFormData(formData);
 
           if (!parsed.success) {
@@ -56,6 +59,7 @@ export async function createProductAction(
 export async function updateProductAction(
           id: string, _previousState: ProductActionState, formData: FormData,
 ): Promise<ProductActionState> {
+          await requireAdmin();
           if (!id.trim()) {
                     return {
                               success: false,
@@ -100,6 +104,7 @@ export async function updateProductAction(
 export async function deleteProductAction(
           id: string,
 ): Promise<ProductActionState> {
+          await requireAdmin();
           if (!id.trim()) {
                     return {
                               success: false,
